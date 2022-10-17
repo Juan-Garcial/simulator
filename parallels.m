@@ -2,7 +2,6 @@ function [coordenadas,Y] = parallels(coordenadas,Y)
        
     tamano = size(Y);
     tamano = tamano(1,1);
-    entry = false;
     i = 1;
     while i<tamano
     
@@ -15,8 +14,7 @@ function [coordenadas,Y] = parallels(coordenadas,Y)
                 Y(i,1) = Y(i,1)+Y(j,1);
                 Y(j, :) =[];
                 coordenadas(j, :) = [];
-                tamano = size(Y);
-                tamano = tamano(1,1);
+                tamano = tamano-1;
                 
             else
 
