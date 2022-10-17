@@ -1,7 +1,10 @@
 clc;clear all;
+%[coordenadas,Y] = parallels(coordenadas,Y); %%function to simplify parallels
 %% obtencion de archivo
-filename ='C:\Users\Cristian\Desktop\ejemplos LTspice\ejemplo1.net';
+%%filename ='C:\Users\Cristian\Desktop\ejemplos LTspice\ejemplo1.net' % route on Cristian's computer
+filename = 'C:\Users\a9300\OneDrive\Documentos\maestria\microondas 1\proyectos\simulador\ejemplos LTspice\ejemplo1.net'; %% route on Jc's computer
 A = importdata(filename);
+%A = readtable(filename);
 %% obtencion de la informacion
 lim_1=length(A.textdata);
 nc=lim_1-4;
@@ -112,3 +115,4 @@ end
 Ym=m_aux
 Zm=m_aux^-1
 
+[coordenadas,Y] = parallels(coordenadas,Y)
