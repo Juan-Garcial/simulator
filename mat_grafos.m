@@ -1,3 +1,4 @@
+%THIS FUNCTION GENERATES A MATRIX TO USE GRAFOS
 function mat_graf = mat_grafos(coordenadas,c_aux)
 
     tamano = size(c_aux);

@@ -1,3 +1,4 @@
+%THIS FUNCTION SIMPLIFIES PARALLES ON CIRCUITS
 function [coordenadas,Y] = parallels(coordenadas,Y)
        
     tamano = size(Y);
