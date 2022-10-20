@@ -1,4 +1,4 @@
-%this function converts pparameters Z to s
+%this function converts pparameters Z to s (only works for 2x2 matrix)
 function s = Z_to_s(Z,Zo)
 
     Z_n= Z/Zo;

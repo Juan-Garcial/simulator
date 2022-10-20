@@ -1,4 +1,4 @@
-%this function convert parameters s to parameters t
+%this function convert parameters s to parameters t 
 
 function t = to_t(s)
 
